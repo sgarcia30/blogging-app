@@ -135,7 +135,8 @@ describe('BlogPosts API resource', function() {
           res = _res;
           res.should.have.status(200);
           // otherwise our db seeding didn't work
-          console.log(res.body.length);
+          // console.log(res.body.length);
+          // console.log(`here's what I'm looking for ${res.body.should.have.length.of.at.least(1)}`);
           res.body.should.have.length.of.at.least(1);
           return BlogPost.count();
         })
