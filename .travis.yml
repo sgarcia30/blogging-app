@@ -2,3 +2,10 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: jIg0RWCJbqZ2BtA/PRVeSbN2mggk53j/ddW/qpUhvzz00U7k+Q+eeVa0hRe1KGLtjDQZ9SmOeawdROfTLT5zCxnnjyRdV1aloZa6HQmIhF6Sy13PJoRCCAMWNk0PMfWB/GnKtN/sj10jebQ0oWmqfTYRK1NgnSPTaQMZGEpFeqYKt8uGJi/DgxV3srnkVeV3+jeC+MuUzVoXmH/chfNjoMKIONb+gNAgydgtk8ltz01yN1sNd4o5vaZqMCSgVYSGkPKMlrWBlKTY0GK44bmNTN9JQztgYAgzHaK35s2F+c6wi87bt1LB7crK+ZPj3Bp2GcgwwKjsVyXiPgoi0+Br2fp5IHZpbjnhPJM0AspmUCYZvt7u99n1Q3LKv+F/4W2le+WYLQWNuf9xLz1xQfCT1h0p/gIWJjkLIXKbSiB4wz3RXf4wFX3YGdbaWWEnmvbzSJAxScrhyzJKqH+IBVKFt4+pADaaMg7D20WvJSFhnQoqazvLeXXXe3rKsyAyfvOluqFwVrKb59yeR1wqUoBQ1fg3+XhQpY7PAkjO3+/dhuoj8caKZFM2rP6+S6PClIpnK5BrOjBxOJ9eq7FsIBDliKcJIc53SgsFIxzknY3EzUGo8aM17iwXAFOAcnIq/uXE8UkYnjnG7BX/nwpuLLMgqiIj3gbFXb3id9MszZtrXSU=
+  app: polar-harbor-14268
+  on:
+    repo: sgarcia30/blogging-app
